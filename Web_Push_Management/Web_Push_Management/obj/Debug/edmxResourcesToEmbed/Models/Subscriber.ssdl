@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SubscriberModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubscriberDatas">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="PrivateKey" Type="nvarchar" MaxLength="100" />
+    <Property Name="PublicKey" Type="nvarchar" MaxLength="100" />
+    <Property Name="Header" Type="nvarchar" MaxLength="100" />
+    <Property Name="Message" Type="nvarchar" MaxLength="100" />
+    <Property Name="URL" Type="nvarchar" MaxLength="100" />
+    <Property Name="Endpoint" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Subscribers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="100" />
+    <Property Name="PrivateKey" Type="nchar" MaxLength="100" />
+    <Property Name="PublicKey" Type="nchar" MaxLength="100" />
+    <Property Name="Header" Type="nchar" MaxLength="100" />
+    <Property Name="Message" Type="nchar" MaxLength="100" />
+    <Property Name="URL" Type="nchar" MaxLength="100" />
+    <Property Name="Endpoint" Type="nchar" MaxLength="250" />
+  </EntityType>
+  <EntityContainer Name="SubscriberModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SubscriberDatas" EntityType="Self.SubscriberDatas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subscribers" EntityType="Self.Subscribers" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

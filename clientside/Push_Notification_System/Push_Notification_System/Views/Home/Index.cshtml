@@ -1,0 +1,103 @@
+﻿@model Push_Notification_System.Models.Subscription
+@using Push_Notification_System.Controllers
+@{
+    ViewBag.Title = "PUSH";
+}
+@using (Html.BeginForm("Create", "Home", FormMethod.Post))
+{
+    <main>
+
+        <p>
+            <button disabled class="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                Enable Push Messaging
+            </button>
+        </p>
+        <p>
+            <button enabled class="js-testpush-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                Test Push Notification
+            </button>
+        </p>
+        <section class="subscription-details js-subscription-details is-invisible">
+            <p>
+                Once you've subscribed your user, you'd send their subscription to your
+                server to store in a database so that when you want to send a message
+                you can lookup the subscription and send a message to it.
+            </p>
+            <p>
+                To simplify things for this code lab copy the following details
+                into the <a href="https://web-push-codelab.glitch.me//">
+                    Push Companion
+                    Site
+                </a> and it'll send a push message for you, using the application
+                server keys on the site - so make sure they match.
+            </p>
+            <pre><code id="code" class="js-subscription-json"></code></pre>
+            @Html.HiddenFor(x => x.SubscriptionData)
+            @*@Html.TextBoxFor(x => x.SubscriptionData, new { @class = "js-subscription-json", @type = "text" })*@
+
+        </section>
+    </main>
+    <div class="col-lg-6 col-md-8 col-sm-10 ">
+
+        <div class="btn btn-success">
+            <input type="submit" value="save" />
+        </div>
+    </div>
+}
+
+<div>
+    <h2>send sub</h2>
+
+    <p id="product"></p>
+</div>
+<br />
+
+@*<script src="~/Scripts/main.js"></script>*@
+<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+
+<script src="http://localhost:60425/main.js"></script>
+
+@*<script>
+    initializeUI();
+</script>*@
+
+<script>
+
+   // var uri = 'http://localhost:60425/api/products';
+    function formatItem(item) {
+        return item.Name + ': $' + item.Price;
+    }
+
+    function find() {
+        var id = $('#prodId').val();
+        alert(id);
+        //$.getJSON(uri + '/' + id)
+        $.ajax({
+            data: id,//JSON.stringify(id),
+            //contentType: "application/json",
+            url: uri + '/' + id,
+            //xhrFields: {withCredentials : true}
+        })
+            .done(function (data) {
+                $('#product').text(formatItem(data));
+            })
+            .fail(function (jqXHR, textStatus, err) {
+                $('#product').text('Error: ' + err);
+            });
+    }
+
+    //function sendRequest(subscription) {
+     
+    //    var Test = $('#prodId').val();
+    //    $.ajax({
+    //        type: "POST",
+    //        url: uri + '/',
+    //        data: { '': JSON.stringify(document.getElementById("code").innerHTML) },// { '': JSON.stringify(Test) }
+    //    }).done(function (data) {
+    //        alert(data);
+    //    }).fail(function (jqXHR, textStatus, errorThrown) {
+    //        alert(jqXHR.responseText || textStatus);
+    //    });
+    //}
+</script>

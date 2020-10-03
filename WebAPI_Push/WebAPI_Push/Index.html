@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Product App</title>
+</head>
+<body>
+
+    <div>
+        <h2>All Products</h2>
+        <ul id="products" />
+    </div>
+
+    <!--<div>
+        <h2>Search by ID</h2>
+        <input type="text" id="prodId" size="5" />
+        <input type="button" value="Search" onclick="find();" />
+        <p id="product" />
+    </div>-->
+    <a href="/Subscribers/View">subs</a>
+    <a href="/Views/SubscriberDatas/Index.cshtml">test</a>
+        <input type="button" value="Click Me" />
+    </a>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+        var uri = 'api/products';
+
+        //$(document).ready(function () {
+
+        //    $.getJSON(uri)
+        //        .done(function (data) {
+
+        //            $.each(data, function (i, val) {
+        //                var item = val.name;
+        //                // Add a list item for the product.
+        //                //$('<li>', { text: item.name }).appendTo($('#subscribers'));
+        //                $('#subscribers').append(item)
+        //            });
+        //        });
+        //});
+
+        // self calling function
+        jQuery(document).ready(function ($) {
+
+            // AJAX request with GET action from the mock API source
+            $.get(uri, function (data) {
+                // creating the "table" with the received data
+                createTable(data)
+            });
+        })
+
+        function createTable(data) {
+            var html = ''
+            data.forEach(e => {
+                // calling createTableRow() for each data item in the
+                // received array
+                html += createTableRow(e)
+            })
+            $('#products').append(html);
+        }
+
+        // adding content to the DOM
+        function createTableRow(result) {
+            // create and return the HTML string filled with dynamic data
+            return `<div><h2>${result.name}</h2><p>${result.name}</p></div>`
+        }
+
+
+
+            //function find() {
+            //    var id = $('#prodId').val();
+            //    $.getJSON(uri + '/' + id)
+            //        .done(function (data) {
+            //            $('#product').text(data);
+            //        })
+            //        .fail(function (jqXHR, textStatus, err) {
+            //            $('#product').text('Error: ' + err);
+            //        });
+            //}
+    </script>
+
+
+
+</body>
+</html>
