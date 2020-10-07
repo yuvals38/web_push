@@ -240,7 +240,6 @@ C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_No
 C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\bin\System.Web.Http.xml
 C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\bin\System.Web.Http.WebHost.xml
 C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\obj\Debug\Push_Notification_System.csprojAssemblyReference.cache
 C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\obj\Debug\Push_Notification_System.csproj.CoreCompileInputs.cache
 C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\obj\Debug\Push_Notification_System.csproj.CopyComplete
 C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\obj\Debug\Push_Notification_System.dll

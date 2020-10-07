@@ -256,7 +256,6 @@ C:\Users\yuval\source\repos\web_push\Web_Push_Management\Web_Push_Management\bin
 C:\Users\yuval\source\repos\web_push\Web_Push_Management\Web_Push_Management\bin\System.Web.WebPages.Razor.xml
 C:\Users\yuval\source\repos\web_push\Web_Push_Management\Web_Push_Management\bin\System.Web.Optimization.xml
 C:\Users\yuval\source\repos\web_push\Web_Push_Management\Web_Push_Management\bin\Antlr3.Runtime.pdb
-C:\Users\yuval\source\repos\web_push\Web_Push_Management\Web_Push_Management\obj\Debug\Web_Push_Management.csprojAssemblyReference.cache
 C:\Users\yuval\source\repos\web_push\Web_Push_Management\Web_Push_Management\obj\Debug\Web_Push_Management.csproj.CoreCompileInputs.cache
 C:\Users\yuval\source\repos\web_push\Web_Push_Management\Web_Push_Management\obj\Debug\Web_Push_Management.csproj.CopyComplete
 C:\Users\yuval\source\repos\web_push\Web_Push_Management\Web_Push_Management\obj\Debug\Web_Push_Management.dll

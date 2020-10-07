@@ -158,6 +158,7 @@ C:\work\web_push\WebAPI_Push\WebAPI_Push\obj\Debug\WebAPI_Push.dll
 C:\work\web_push\WebAPI_Push\WebAPI_Push\obj\Debug\WebAPI_Push.pdb
 C:\work\web_push\WebAPI_Push\WebAPI_Push\obj\Debug\WebAPI_Push.Migrations.EmptyMigration.resources
 C:\work\web_push\WebAPI_Push\WebAPI_Push\obj\Debug\WebAPI_Push.csproj.GenerateResource.cache
+C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\WebAPI_Push.dll.config
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\WebAPI_Push.dll
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\WebAPI_Push.pdb
@@ -171,7 +172,6 @@ C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\roslyn\Microsof
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\roslyn\Microsoft.CSharp.Core.targets
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
@@ -232,7 +232,6 @@ C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\System.Web.WebP
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\System.Web.WebPages.Razor.xml
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\WebMatrix.Data.xml
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\bin\WebMatrix.WebData.xml
-C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\obj\Debug\WebAPI_Push.csprojAssemblyReference.cache
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\obj\Debug\WebAPI_Push.Migrations.EmptyMigration.resources
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\obj\Debug\WebAPI_Push.csproj.GenerateResource.cache
 C:\Users\yuval\source\repos\web_push\WebAPI_Push\WebAPI_Push\obj\Debug\WebAPI_Push.csproj.CoreCompileInputs.cache
