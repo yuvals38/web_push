@@ -16,16 +16,15 @@ let swRegistration = null;
 
 function initializeUI() {
 
+    
+
     testpushButton.addEventListener('click', function () {
-        //navigator.serviceWorker.register('./sw.js').then(function (swReg) {
-        //    console.log('test push', swReg);
-        //});
+
         swRegistration.pushManager.getSubscription().then(
             function (subscription) {
                 isSubscribed = !(subscription === null);
 
                 if (isSubscribed) {
-
                     updateSubscriptionOnServer(subscription, 'subscribe');
                 }
             });

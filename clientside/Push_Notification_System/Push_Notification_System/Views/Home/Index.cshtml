@@ -64,7 +64,6 @@
 
 <script>
 
-   // var uri = 'http://localhost:60425/api/products';
     function formatItem(item) {
         return item.Name + ': $' + item.Price;
     }
@@ -72,12 +71,9 @@
     function find() {
         var id = $('#prodId').val();
         alert(id);
-        //$.getJSON(uri + '/' + id)
         $.ajax({
-            data: id,//JSON.stringify(id),
-            //contentType: "application/json",
+            data: id,
             url: uri + '/' + id,
-            //xhrFields: {withCredentials : true}
         })
             .done(function (data) {
                 $('#product').text(formatItem(data));
@@ -87,17 +83,5 @@
             });
     }
 
-    //function sendRequest(subscription) {
-     
-    //    var Test = $('#prodId').val();
-    //    $.ajax({
-    //        type: "POST",
-    //        url: uri + '/',
-    //        data: { '': JSON.stringify(document.getElementById("code").innerHTML) },// { '': JSON.stringify(Test) }
-    //    }).done(function (data) {
-    //        alert(data);
-    //    }).fail(function (jqXHR, textStatus, errorThrown) {
-    //        alert(jqXHR.responseText || textStatus);
-    //    });
-    //}
+  
 </script>
