@@ -244,3 +244,4 @@ C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_No
 C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\obj\Debug\Push_Notification_System.csproj.CopyComplete
 C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\obj\Debug\Push_Notification_System.dll
 C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\obj\Debug\Push_Notification_System.pdb
+C:\Users\yuval\source\repos\web_push\clientside\Push_Notification_System\Push_Notification_System\obj\Debug\Push_Notification_System.csprojAssemblyReference.cache
